@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "sociallogingmail54644b29": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

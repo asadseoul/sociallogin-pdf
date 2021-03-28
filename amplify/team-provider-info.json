@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sociallogingmail-dev-182439-authRole",
+      "UnauthRoleArn": "arn:aws:iam::717767579920:role/amplify-sociallogingmail-dev-182439-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::717767579920:role/amplify-sociallogingmail-dev-182439-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-sociallogingmail-dev-182439-deployment",
+      "UnauthRoleName": "amplify-sociallogingmail-dev-182439-unauthRole",
+      "StackName": "amplify-sociallogingmail-dev-182439",
+      "StackId": "arn:aws:cloudformation:us-east-1:717767579920:stack/amplify-sociallogingmail-dev-182439/1cb80940-84a7-11eb-935c-0e8b433be3dd",
+      "AmplifyAppId": "d35jp6m019oczw"
+    },
+    "categories": {
+      "auth": {
+        "sociallogingmail54644b29": {}
+      }
+    }
+  }
+}
