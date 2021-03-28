@@ -259,13 +259,13 @@ class App extends Component {
                 tableRecord && tableRecord.map(single =>(
                   
                     <div key={single.id}> 
-                      <div key={`headline_${single.id}`} className="form-control" >
+                      <div key={`headline_${single.id}`} style={{marginBottom:"20px"}} >
                         <strong>Username:</strong>{JSON.parse(single.userDetail).name} 
                         <strong> &nbsp;&nbsp;/ &nbsp;&nbsp;</strong>
                         <strong>Email</strong> {JSON.parse(single.userDetail).userid} 
                         <ShareLink link={`${BACKEND_URL}/my-virtual-directory/${single.fileInfo.filename}`}>
                           {link => (
-                              <a href={link} target='_blank'>Share this on Facebook</a>
+                              <a class ="btn btn-warning" style={{marginLeft:"20px"}} href={link} target='_blank'>Share on Facebook</a>
                           )}
                         </ShareLink>
                         <a key={`view_${single.id}`} style={{color : "BLUE",float : "right", cursor : "pointer"}}  target="_blank" href= {`${BACKEND_URL}/my-virtual-directory/${single.fileInfo.filename}`} >[ View Pdf ]</a>
