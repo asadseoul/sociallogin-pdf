@@ -5,6 +5,7 @@ import axios from 'axios';
 import {Progress} from 'reactstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ShareLink from 'react-facebook-share-link'
  
 const BACKEND_URL = "http://localhost:8000";
 
@@ -262,6 +263,11 @@ class App extends Component {
                         <strong>Username:</strong>{JSON.parse(single.userDetail).name} 
                         <strong> &nbsp;&nbsp;/ &nbsp;&nbsp;</strong>
                         <strong>Email</strong> {JSON.parse(single.userDetail).userid} 
+                        <ShareLink link={`${BACKEND_URL}/my-virtual-directory/${single.fileInfo.filename}`}>
+                          {link => (
+                              <a href={link} target='_blank'>Share this on Facebook</a>
+                          )}
+                        </ShareLink>
                         <a key={`view_${single.id}`} style={{color : "BLUE",float : "right", cursor : "pointer"}}  target="_blank" href= {`${BACKEND_URL}/my-virtual-directory/${single.fileInfo.filename}`} >[ View Pdf ]</a>
                         <strong key={`del_${single.id}`} style={{color : "RED",float : "right", cursor : "pointer"}}  onClick={()=>this.ondeleteHandler(single._id,single.fileInfo.path)} >[ Delete ]</strong>
                         
