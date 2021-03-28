@@ -26,12 +26,8 @@ npm install
   1. Git clone project
   2. cd directory
   3. npm install
-
-  To start node server : 
-  4. node server.js 
-
-  To start react appliaction : 
-  5. npm start 
+  4. node server.js  [For backend] 
+  5. npm start  [For Frontend ]    
   
 
 
